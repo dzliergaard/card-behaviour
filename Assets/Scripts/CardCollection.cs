@@ -6,7 +6,7 @@ using System.Linq;
 /// Base class for a collection of cards, such as a deck or a player's hand.
 /// </summary>
 public class CardCollection<T> where T : Card {
-  private List<T> Cards;
+  public List<T> Cards;
 
   public int Count { get { return Cards.Count; } }
   public int Size { get { return Count; } }
